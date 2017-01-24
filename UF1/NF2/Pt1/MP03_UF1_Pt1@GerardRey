@@ -1,0 +1,78 @@
+
+
+//Exercici 1
+//Opció 1
+
+while (notFinished()) {
+	if (isPathForward()) {
+		moveForward();
+	} else {
+		if (isPathLeft()) {
+			turnLeft();
+		} else {
+			turnRight();
+		}
+	}
+}
+
+//Exercici 1
+//Opció 2
+
+while (notFinished()) {
+	if (isPathLeft()) {
+		turnLeft();
+		moveForward();
+	} else {
+		if (isPathForward()) {
+			moveForward();
+		} else {
+			turnRight();
+		}
+	}
+}
+
+//Exercici 2
+
+while (notFinished()) {
+	if (isPathForward()) {
+		moveForward();
+	} else {
+		if (isPathLeft()) {
+			turnLeft();
+		} else {
+			turnRight();
+		}
+	}
+}
+
+//Exercici 3
+//Opció 1
+
+while (notFinished()) {
+	if (isPathRight()) {
+		turnRight();
+		moveForward();
+	} else {
+		if (isPathForward()) {
+			moveForward();
+		} else {
+			turnLeft();
+		}
+	}
+}
+
+//Exercici 3 
+//Opció 2
+
+while (notFinished()) {
+	if (isPathLeft()) {
+		turnLeft();
+		moveForward();
+	} else {
+		if (isPathForward()) {
+			moveForward();
+		} else {
+			turnRight();
+		}
+	}
+}
