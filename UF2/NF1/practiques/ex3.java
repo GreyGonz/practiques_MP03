@@ -1,14 +1,21 @@
-// Exercici 2 UF2 NF1
+// Exercici 3 UF2 NF1
 // Gerard Rey González
 // Disseny Modular
 
 import java.util.Scanner;
 
 public class ex3 {
+
+  //Les variables en majuscules solen ser constantns
+  public static final int P=5;
+  public static final int C=15;
+  public static final int F=20;
+
   public static void main(String[] args) {
     int alumne, mp, nota;
-    int F, C, P;
-    F=C=P=20;
+    //Al ser majuscules són constants
+    // int F, C, P;
+    // F=C=P=20;
 
     alumne = demanaValor("\nIntrodueix l'alumne a consultar(0-%d):\n", F);
 

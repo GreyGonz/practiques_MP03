@@ -16,8 +16,13 @@ public class Projecte {
     /**
      * @param args the command line arguments
      */
+
+    //Nombre màxim de casselles per a l'array
+    private static final int MAX_BOSSES=2;
+    //Array on guardarem la informació dels pilots
+    private static Boss[] array=new Boss[MAX_BOSSES];
+
     public static void main(String[] args) {
-        // TODO code application logic here
         Scanner entry = new Scanner(System.in);
         Scanner text = new Scanner(System.in);
         int init, aparicio=0, animes=0, opcioInt=0, auxInt=0;
