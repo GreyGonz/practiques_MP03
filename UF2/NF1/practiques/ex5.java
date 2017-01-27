@@ -21,11 +21,13 @@ public class ex5 {
   }
 
   public static boolean bixest(int any) {
-    boolean bixest;
+    // boolean bixest;
+    //
+    // if (any%400==0 || (any%4==0 && any%100!=0)) bixest=true;
+    // else bixest=false;
+    //
+    // return bixest;
 
-    if (any%400==0 || any%4==0 && any%100!=0) bixest=true;
-    else bixest=false;
-
-    return bixest;
+    return (any>=1584) && (any%400==0 || (any%4==0 && any%100!=0)); // Aquesta l'inia ja retorna True o False sense necessitat de IF's
   }
 }
