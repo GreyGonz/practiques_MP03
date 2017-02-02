@@ -7,12 +7,23 @@ import java.util.Scanner;
 public class ex13 {
   public static void main(String[] args) {
 
-    numVector({-6,7,8});
+    System.out.println(numVector(new int[] {-6,7}));
+
   }
 
   public static int numVector(int[] valor) {
 
-    valor = new int[]
+    int resultat=0;
+    int factor=1;
 
+    boolean negatiu = (valor[0]<0);
+    if(negatiu) valor[0] *= -1;
+
+    for (int i = valor.length-1; i >= 0; i--) {
+      resultat += valor[i] * factor;
+      factor *= 10;
+    }
+
+    return resultat * (negatiu?-1:1);
   }
 }
