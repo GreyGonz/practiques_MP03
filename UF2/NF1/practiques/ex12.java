@@ -2,10 +2,14 @@
 // Gerard Rey González
 // Disseny Modular
 
+import java.util.Scanner;
+
 public class ex12 {
   public static void main(String[] args) {
     Scanner entry = new Scanner(System.in);
     String text,subcadena;
+    int a=0;
+    boolean b=false;
 
     System.out.format("Introdueix un text: ");
     text = entry.nextLine();
@@ -13,8 +17,10 @@ public class ex12 {
     System.out.format("Introdueix els caràcters a buscar: ");
     subcadena = entry.nextLine();
 
-    for (int i = 0; i < text.length(); i++) {
-
+    while(a!=-1) {
+      a = buscaCadena(text,subcadena,(b?a+1:a));
+      if (a==-1) break; else System.out.println(a);
+      b = true;
     }
   }
 
