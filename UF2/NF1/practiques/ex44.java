@@ -36,7 +36,7 @@ public class ex44 {
     System.out.println("Paraula: ");
     do {
       paraula = e.nextLine().trim();
-      paraules = paraula.split(" -");
+      paraules = paraula.split("\\s+");
     } while (paraula.isEmpty() || !(paraules.length==1));
 
 
