@@ -1,4 +1,4 @@
-// Exercici 6 UF2 NF1
+// Exercici 7 UF2 NF1
 // Gerard Rey González
 // Disseny Modular
 
