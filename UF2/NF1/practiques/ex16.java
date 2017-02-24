@@ -20,11 +20,7 @@ public class ex16 {
 
     System.out.format("Escriu la pos del text per on es vol començar a buscar:\n");
     pos = e.nextInt();
-    //
-    // text = "textexans";
-    // subcadena = "ex";
-    // pos = 0;
-    //
+
     do {
       result = eliminaCadena(text,subcadena,pos);
       text = result;
