@@ -43,4 +43,41 @@ public class Numeros {
     return 0;
   }
 
+  public static int diferenciaDies(int dia1, int mes1, int any1, int dia2, int mes2, int any2) {
+    int count = 0;
+    int dia,mes,any;
+    int[] data1 = new int[3];
+    int[] data2 = new int[3];
+
+    if (!data(dia1,mes1,any1) || !data(dia2,mes2,any2)) return -1;
+
+    if (comparaDates(dia1,mes1,any1,dia2,mes2,any2)==0) return 0;
+
+    if (comparaDates(dia1,mes1,any1,dia2,mes2,any2)==-1) {
+      data1[0] = dia1;
+      data1[1] = mes1;
+      data1[2] = any1;
+      data2[0] = dia2;
+      data2[1] = mes2;
+      data2[2] = any2;
+    } else {
+      data1[0] = dia2;
+      data1[1] = mes2;
+      data1[2] = any2;
+      data2[0] = dia1;
+      data2[1] = mes1;
+      data2[2] = any1;
+    }
+
+    do {
+      int[] data = diaSeguent(data1[0],data1[1],data1[2]);
+      data1[0] = data[0];
+      data1[1] = data[1];
+      data1[2] = data[2];
+      count++;
+    } while (comparaDates(data1[0],data1[1],data1[2],data2[0],data2[1],data2[2])!=0);
+
+    return count;
+  }
+
 }
