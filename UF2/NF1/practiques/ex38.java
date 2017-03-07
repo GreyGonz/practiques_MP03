@@ -4,7 +4,7 @@
 
 import java.util.Scanner;
 //Utilitzem la classe Data de la llibreria numeros.jar
-import llibreries.Numeros;
+import llibreries.Dates;
 
 public class ex38 {
   public static void main(String[] args) {
@@ -19,7 +19,7 @@ public class ex38 {
     System.out.format("\nDia: ");
     dia = e.nextInt();
 
-    if (Numeros.data(any,mes,dia)) System.out.format("\nLa data %s-%s-%s és correcta\n", dia, mes, any);
+    if (Dates.data(any,mes,dia)) System.out.format("\nLa data %s-%s-%s és correcta\n", dia, mes, any);
     else System.out.format("\nLa data %s-%s-%s és incorrecta\n", dia, mes, any);
 
   }

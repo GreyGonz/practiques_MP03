@@ -1,5 +1,5 @@
 
-import llibreries.Numeros;
+import llibreries.Dates;
 import java.util.Scanner;
 
 public class ex39 {
@@ -15,7 +15,7 @@ public class ex39 {
     System.out.format("\nDia: ");
     dia = e.nextInt();
 
-    int[] diaS = Numeros.diaSeguent(dia,mes,any);
+    int[] diaS = Dates.diaSeguent(dia,mes,any);
     System.out.format("El dia següent és %s-%s-%s\n", diaS[0],diaS[1],diaS[2]);
 
   }
