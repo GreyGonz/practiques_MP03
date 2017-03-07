@@ -9,6 +9,6 @@ public class ex25 {
     System.out.println("-456 --> " + Numeros.longitudNumero(-456));
     System.out.println("13000 --> " + Numeros.longitudNumero(13000));
     System.out.println("-800 --> " + Numeros.longitudNumero(-800));
-    System.out.println("077 --> " + Numeros.longitudNumero(077));
+    System.out.println("077 --> " + Numeros.longitudNumero(077));    
   }
 }
