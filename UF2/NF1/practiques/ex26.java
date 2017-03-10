@@ -1,3 +1,6 @@
+// Exercici 26 UF2 NF1
+// Gerard Rey González
+// Disseny Modular
 
 import llibreries.Numeros;
 

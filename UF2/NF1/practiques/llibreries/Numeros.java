@@ -1,7 +1,9 @@
+// Llibreria Numeros UF2
+// Gerard Rey González
+// Disseny Modular
 
 package llibreries;
 import java.lang.Math;
-
 
 public class Numeros {
 
@@ -90,6 +92,35 @@ public class Numeros {
     if (negatiu) num *= -1;
 
     return num;
+  }
+
+  public static boolean numCapicua(int num) {
+    return num == revesNumero(num);
+  }
+
+  public static double factorial(int num) {
+    int fact = 1;
+    while(num!=0) {
+      fact=fact*num;
+      num--;
+    }
+    return fact;
+  }
+
+  public static double factorialV2(int num) {
+    if (num==0) return 1;
+    else return num * factorialV2(num-1);
+  }
+
+  public static double potenciaE(int p) {
+    double result=1;
+    if (p==0) return 1;
+
+    for (int i = 1; i <= 30; i++) {
+      result += Math.pow(p,i)/factorialV2(i);
+    }
+
+    return result;
   }
 
 }
