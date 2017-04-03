@@ -5,7 +5,7 @@
  */
 package javaapplication12;
 
-import java.
+import java.util.Scanner;
 
 /**
  *
@@ -18,9 +18,9 @@ public class JavaApplication12 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        
+
         System.out.format("Hola %n");
         System.out.format("Mon ");
     }
-    
+
 }
